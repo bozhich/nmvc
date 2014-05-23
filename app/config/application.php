@@ -10,7 +10,7 @@ return array(
 	/**
 	 * Without trailing slashes
 	 */
-	'base_url' => '*****',
+	'base_url' => 'http://luka.dev',
 
 	/**
 	 * Default Routes
@@ -23,5 +23,5 @@ return array(
 	/**
 	 * Static Adress where the css / js / img are located
 	 */
-	'static_address' => '*base_url*/static'
+	'static_address' => 'http://luka.dev/static'
 );
