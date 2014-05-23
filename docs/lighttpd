@@ -1,0 +1,4 @@
+    url.rewrite-once = (
+		"^((/static/|share/).*)$" => "/public/$1",
+		"^(.*)$" => "/index.php/$1",			
+    )
