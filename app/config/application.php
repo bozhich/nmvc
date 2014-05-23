@@ -23,5 +23,5 @@ return array(
 	/**
 	 * Static Adress where the css / js / img are located
 	 */
-	'static_address' => 'http://luka.dev/static'
+	'static_address' => '*base_url*/static'
 );
