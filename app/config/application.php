@@ -10,7 +10,7 @@ return array(
 	/**
 	 * Without trailing slashes
 	 */
-	'base_url' => 'http://luka.dev',
+	'base_url' => '*****',
 
 	/**
 	 * Default Routes

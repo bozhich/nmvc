@@ -2,9 +2,9 @@
 return array(
 	'driver'   => 'mysql',
 	'host'     => 'localhost',
-	'database' => 'test',
+	'database' => '*****',
 	'user'     => 'root',
-	'password' => 'jipxnmzn',
-	'database' => 'tournament',
+	'password' => '*****',
+	'database' => '*****',
 	'charset' => 'utf-8',
 );
