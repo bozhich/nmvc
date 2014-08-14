@@ -3,8 +3,8 @@
  * Autoloader
  *
  *
- * @package    Global
- * @author     Luka Bozhich <luka@bozhich.com>
+ * @package	Global
+ * @author	 Luka Bozhich <luka@bozhich.com>
  */
 class Autoloader {
 
@@ -15,12 +15,12 @@ class Autoloader {
 	 * @return void
 	 */
 	public static function load($class) {
-		
-		// Linux Directory Separator 
+
+		// Linux Directory Separator
 		if (strtoupper(substr(PHP_OS, 0, 5)) === 'LINUX') {
 			$class = implode(DS , explode('\\' , $class));
 		}
-		
+
 		$filename = __DIR__ . DS . strtolower($class).'.php';
 		if (file_exists($filename)) {
 			include_once $filename;

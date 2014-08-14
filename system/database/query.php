@@ -54,7 +54,7 @@ class Query {
 	 * @return void
 	 */
 	public function where($key, $oper, $value) {
-		$this->where[]    = "AND ".$key.' '.$oper.' '."?";
+		$this->where[]	= "AND ".$key.' '.$oper.' '."?";
 		$this->bindings[] = $value;
 	}
 	
@@ -67,7 +67,7 @@ class Query {
 	 * @return void
 	 */
 	public function orWhere($key, $oper, $value) {
-		$this->where[]    = "OR " . $key . ' ' . $oper . ' ' . "?";
+		$this->where[]	= "OR " . $key . ' ' . $oper . ' ' . "?";
 		$this->bindings[] = $value;
 	}
 

@@ -3,8 +3,8 @@
  * Paths Describtion
  *
  *
- * @package    global
- * @author     Luka Bozhich <luka@bozhich.com>
+ * @package	global
+ * @author	 Luka Bozhich <luka@bozhich.com>
  */
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT_PATH', realpath(dirname(__FILE__)) . DS);

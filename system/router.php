@@ -3,8 +3,8 @@
  * Router
  *
  *
- * @package    system
- * @author     Luka Bozhich <luka@bozhich.com>
+ * @package	system
+ * @author	 Luka Bozhich <luka@bozhich.com>
  */
 namespace system;
 
@@ -61,8 +61,8 @@ class Router extends Singleton {
 	private function defaultRoute() {
 		$this->lang 	  = Config::$application['default_route']['lang'];
 		$this->controller = Config::$application['default_route']['controller'];
-		$this->method     = Config::$application['default_route']['method'];
-		$this->id     	  = Config::$application['default_route']['id'];
+		$this->method	 = Config::$application['default_route']['method'];
+		$this->id	 	  = Config::$application['default_route']['id'];
 	}
 
 	

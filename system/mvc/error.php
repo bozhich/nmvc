@@ -3,9 +3,9 @@
  * Error Logger
  *
  *
- * @package    system
+ * @package	system
  * @subpackage mvc
- * @author     Luka Bozhich <luka@bozhich.com>
+ * @author	 Luka Bozhich <luka@bozhich.com>
  */
 namespace system\mvc;
 

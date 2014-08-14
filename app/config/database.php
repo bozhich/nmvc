@@ -1,9 +1,9 @@
 <?php
 return array(
 	'driver'   => 'mysql',
-	'host'     => 'localhost',
+	'host'	 => 'localhost',
 	'database' => 'test',
-	'user'     => 'root',
+	'user'	 => 'root',
 	'password' => 'jipxnmzn',
 	'database' => 'tournament',
 	'charset' => 'utf-8',
