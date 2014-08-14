@@ -7,6 +7,5 @@ class Users extends Controller {
 	public $restful = false;
 
 	public function action_index() {
-		$this->getView()->setMainFile('users.login');
 	}
 }

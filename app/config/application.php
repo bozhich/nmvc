@@ -23,5 +23,10 @@ return array(
 	/**
 	 * Static Adress where the css / js / img are located
 	 */
-	'static_address' => 'http://luka.dev/static'
+	'static_address' => 'http://luka.dev/static',
+
+	/**
+	 * Error log path
+	 */
+	'error_log' => '/home/luka/www/luka/logs/',
 );

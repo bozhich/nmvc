@@ -1,5 +1,5 @@
 <?php
-use system\Config, 
+use system\Config,
 system\Router,
 //system\Request,
 //system\Database\Query,
@@ -46,4 +46,34 @@ Router::getInstance()->fire();
 View::getInstance()->fire();
 
 
+//
+
+function dd() {
+	$args = func_get_args();
+	foreach($args as $var) {
+		\NDebugger::dump($var);
+	}
+	die();
+}
+
+function d() {
+	$args = func_get_args();
+	foreach($args as $var) {
+		\NDebugger::dump($var);
+	}
+}
+
+function bd() {
+	$args = array_reverse(func_get_args());
+	$title = '[dump]';
+	foreach($args as $var) {
+		if (is_string($var)) {
+			if (preg_match('#\[(.*)\]#', $var)) {
+				$title = $var;
+				continue;
+			}
+		}
+		\NDebugger::barDump($var, $title);
+	}
+}
 

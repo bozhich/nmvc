@@ -1,7 +1,7 @@
 <?php
 namespace app\Controllers;
 use system\mvc\Controller,
-	system\mvc\View, 
+	system\mvc\View,
 	app\Models\User as Model;
 
 class Index extends Controller {
@@ -16,5 +16,6 @@ class Index extends Controller {
 
 	public function action_index() {
 		$this->getView()->asd = 'luka';
+		$rs = Model::getUsers();
 	}
 }

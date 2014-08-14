@@ -6,5 +6,5 @@ return array(
 	'user'	 => 'root',
 	'password' => 'jipxnmzn',
 	'database' => 'tournament',
-	'charset' => 'utf-8',
+	'charset' => 'utf8',
 );

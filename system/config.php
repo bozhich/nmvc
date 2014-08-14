@@ -12,14 +12,14 @@ namespace system;
 use system\Database\db as DB;
 
 class Config {
-	
+
 	/**
 	 * @access public
 	 * @static
 	 * @var array
 	 */
 	public static $application = array();
-	
+
 	/**
 	 * @access public
 	 * @static
@@ -27,7 +27,7 @@ class Config {
 	 */
 	public static $database = array();
 
-	
+
 	/**
 	 * Loads user configuration
 	 * @access public
@@ -39,7 +39,7 @@ class Config {
 		self::$database = require \Paths::CFG_PATH . 'database.php';
 	}
 
-	
+
 	/**
 	 * Connects to Database
 	 * @access public
@@ -48,6 +48,10 @@ class Config {
 	 */
 	public static function loadDb() {
 		DB::init(self::$database);
+		if (Config::$application['environment'] == 'development') {
+			\NDebugger::enable();
+			\NDebugger::$logDirectory = Config::$application['error_log'];
+		}
 	}
 
 
