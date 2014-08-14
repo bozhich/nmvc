@@ -310,7 +310,7 @@ class DibiConnection extends DibiObject
 
 	/**
 	 * Executes the SQL query.
-	 * @param  string           SQL statement.
+	 * @param  string		   SQL statement.
 	 * @return DibiResult|int   result set object (if any)
 	 * @throws DibiException
 	 */

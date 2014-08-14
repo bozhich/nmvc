@@ -181,7 +181,7 @@ class dibi
 
 	/**
 	 * Executes the SQL query - Monostate for DibiConnection::nativeQuery().
-	 * @param  string           SQL statement.
+	 * @param  string		   SQL statement.
 	 * @return DibiResult|int   result set object (if any)
 	 */
 	public static function nativeQuery($sql)

@@ -68,7 +68,7 @@ class DibiDataSource extends DibiObject implements IDataSource
 	/**
 	 * Selects columns to query.
 	 * @param  string|array  column name or array of column names
-	 * @param  string        column alias
+	 * @param  string		column alias
 	 * @return self
 	 */
 	public function select($col, $as = NULL)
@@ -104,7 +104,7 @@ class DibiDataSource extends DibiObject implements IDataSource
 	/**
 	 * Selects columns to order by.
 	 * @param  string|array  column name or array of column names
-	 * @param  string        sorting direction
+	 * @param  string		sorting direction
 	 * @return self
 	 */
 	public function orderBy($row, $sorting = 'ASC')

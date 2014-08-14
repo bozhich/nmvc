@@ -255,9 +255,9 @@ class DibiResult extends DibiObject implements IDataSource
 	 * Fetches all records from table and returns associative tree.
 	 * Examples:
 	 * - associative descriptor: col1[]col2->col3
-	 *   builds a tree:          $tree[$val1][$index][$val2]->col3[$val3] = {record}
+	 *   builds a tree:		  $tree[$val1][$index][$val2]->col3[$val3] = {record}
 	 * - associative descriptor: col1|col2->col3=col4
-	 *   builds a tree:          $tree[$val1][$val2]->col3[$val3] = val4
+	 *   builds a tree:		  $tree[$val1][$val2]->col3[$val3] = val4
 	 * @param  string  associative descriptor
 	 * @return DibiRow
 	 * @throws InvalidArgumentException

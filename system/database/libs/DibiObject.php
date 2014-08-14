@@ -30,7 +30,7 @@
  * Event functionality is provided by declaration of property named 'on{Something}'
  * Multiple handlers are allowed.
  * <code>
- * public $onClick;                // declaration in class
+ * public $onClick;				// declaration in class
  * $this->onClick[] = 'callback';  // attaching event handler
  * if (!empty($this->onClick)) ... // are there any handlers?
  * $this->onClick($sender, $arg);  // raises the event with arguments

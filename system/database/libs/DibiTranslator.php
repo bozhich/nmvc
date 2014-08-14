@@ -104,18 +104,18 @@ final class DibiTranslator extends DibiObject
 					$sql[] = substr($arg, 0, $toSkip)
 /*
 					. preg_replace_callback('/
-					(?=[`[\'":%?])                    ## speed-up
+					(?=[`[\'":%?])				    ## speed-up
 					(?:
-						`(.+?)`|                     ## 1) `identifier`
-						\[(.+?)\]|                   ## 2) [identifier]
+						`(.+?)`|				     ## 1) `identifier`
+						\[(.+?)\]|				   ## 2) [identifier]
 						(\')((?:\'\'|[^\'])*)\'|     ## 3,4) 'string'
-						(")((?:""|[^"])*)"|          ## 5,6) "string"
-						(\'|")|                      ## 7) lone quote
+						(")((?:""|[^"])*)"|		  ## 5,6) "string"
+						(\'|")|				      ## 7) lone quote
 						:(\S*?:)([a-zA-Z0-9._]?)|    ## 8,9) :substitution:
 						%([a-zA-Z~][a-zA-Z0-9~]{0,5})|## 10) modifier
-						(\?)                         ## 11) placeholder
+						(\?)						 ## 11) placeholder
 					)/xs',
-*/                  // note: this can change $this->args & $this->cursor & ...
+*/				  // note: this can change $this->args & $this->cursor & ...
 					. preg_replace_callback('/(?=[`[\'":%?])(?:`(.+?)`|\[(.+?)\]|(\')((?:\'\'|[^\'])*)\'|(")((?:""|[^"])*)"|(\'|")|:(\S*?:)([a-zA-Z0-9._]?)|%([a-zA-Z~][a-zA-Z0-9~]{0,5})|(\?))/s',
 							array($this, 'cb'),
 							substr($arg, $toSkip)
