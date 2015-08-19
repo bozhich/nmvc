@@ -4,7 +4,7 @@ return array(
 	'host'	 => 'localhost',
 	'database' => 'test',
 	'user'	 => 'root',
-	'password' => 'jipxnmzn',
-	'database' => 'tournament',
+	'password' => '************',
+	'database' => '**********',
 	'charset' => 'utf8',
 );
